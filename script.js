@@ -7,7 +7,19 @@
     var _total =_bmi.toFixed(3);
 
     document.getElementById("toshow").innerHTML= "your Bmi is " + _total;
-  
+    if(_total<18.5 ){
+
+        document.getElementById("message").innerHTML="Thinness";
+    }
+    else if(_total=>18.5 || _total <= 25){
+
+        document.getElementById("message").innerHTML="Normal";
+    }
+    else{
+
+        document.getElementById("message").innerHTML=" ";
+
+    }
  }
  
 
